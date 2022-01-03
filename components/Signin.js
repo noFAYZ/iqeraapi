@@ -2,9 +2,10 @@ import React from 'react'
 import {useState} from 'react'
 const { API_URL } = process.env
 import { setCookie } from 'nookies'
-import Router from 'next/router'
+import {useRouter} from 'next/router'
 
 function Signin() {
+  const router = useRouter();
 
 
 const [username, setUsername] = useState('')
@@ -26,16 +27,14 @@ async function handleLogin(){
   })
   const loginData = await login.json()
   console.log(loginData)
-if(loginData.jwt==null){
-    alert('Invalid username or password')
-}else{  
+
   setCookie(null, 'token', loginData.jwt, {
       maxAge: 30 * 24 * 60 * 60,
       path: '/'
     })
 
-    Router.push('/courses')
-  }
+    router.push('/courses')
+  
   
 }
 

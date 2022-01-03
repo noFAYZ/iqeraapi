@@ -21,7 +21,7 @@ function Hero1() {
         <span className="inline-block text-deep-purple-accent-400">is real</span>
       </h2>
       <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+       sijuisaui husad ioudhao su daisudiasug
       </p>
       <div className="flex items-center">
         <a href="/" className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-black hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">

@@ -44,6 +44,7 @@ export async function getServerSideProps(ctx) {
             Authorization: `Bearer ${jwt}`
         }
     })
+   
     const data = await res.json()
 
     return {

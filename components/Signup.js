@@ -4,11 +4,7 @@ function Signup() {
     return (
         <div>
                  <div className="relative">
-        <img
-          src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-          className="absolute inset-0 object-cover w-full h-full"
-          alt=""
-        />
+       
         <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
           <svg
             className="absolute inset-x-0 bottom-0 text-white"

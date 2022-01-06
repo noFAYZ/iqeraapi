@@ -11,7 +11,7 @@ function Signin(ctx) {
   const router = useRouter();
   const jwt = parseCookies(ctx).token;
   if (jwt!=null) {
-  router.push('/courses')
+  router.push('/dashboard')
   }
 
 const [username, setUsername] = useState('')
@@ -40,7 +40,7 @@ if(loginData.jwt!=null){
       path: '/'
     })
 
-    router.push('/courses')
+    router.push('/dashboard')
 }
 else{
   alert('wrong username or password')
